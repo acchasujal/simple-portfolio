@@ -1,85 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Website Of Sujal Gupta</title>
+  <title>Sujal Gupta — Portfolio Website</title>
+  <meta name="description"
+    content="Award-winning portfolio of Sujal Gupta, a Full Stack Developer bridging academic theory and industry reality through innovative projects and hackathon leadership.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <!-- Custom Cursor -->
+  <div id="custom-cursor"></div>
 
+  <!-- Grid Background -->
+  <div class="grid-bg"></div>
 
-  <header>
-    <nav>
-      <h1 class="logo">Sujal Gupta</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Floating Navigation -->
+  <nav class="navbar">
+    <div class="navbar-logo">Sujal Gupta</div>
+    <ul class="navbar-links">
+      <li><a href="#work" class="navbar-link">Work</a></li>
+      <li><a href="#experience" class="navbar-link">Experience</a></li>
+      <li><a href="#contact" class="navbar-link">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a 2nd year Information Technology engineering student.
-      I am learning web development and DSA.
-    </p>
-  </section>
+  <!-- Hero Section - Staggered 12-Column Grid -->
+  <section class="hero container">
+    <div class="hero-grid">
+      <!-- SUJAL - Top Left (Cols 1-8, Row 1) -->
+      <h1 class="hero-title-first">
+        <div>SUJAL</div>
+      </h1>
 
-  <section id="skills">
-    <h2>Tech Stack & Skills</h2>
-    <div class="skills-box">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>C++</span>
-      <span>Java</span>
-      <span>Python</span>
-      <span>Git & GitHub</span>
-    </div>
-  </section>
+      <!-- Tagline - Center (Cols 4-10, Row 2) -->
+      <p class="hero-tagline">UI/UX Designer & Full Stack Engineer</p>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-box">
-      <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>A personal portfolio website built using HTML and CSS.</p>
-      </div>
-      <div class="card">
-        <h3>Project 2</h3>
-        <p>Description.</p>
-      </div>
-      <div class="card">
-        <h3>Project 3</h3>
-        <p>Description.</p>
+      <!-- GUPTA - Bottom Right (Cols 5-12, Row 3) -->
+      <h1 class="hero-title-last">
+        <div>GUPTA</div>
+      </h1>
+
+      <!-- CTAs - Center (Cols 4-10, Row 4) -->
+      <div class="hero-ctas">
+        <a href="https://github.com/acchasujal" target="_blank" rel="noopener noreferrer"
+          class="cta-btn cta-primary">View Work</a>
+        <a href="assets/resume.pdf" class="cta-btn cta-secondary">Resume</a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
+  <!-- Power Strip - Tech Stack -->
+  <div class="power-strip-section">
+    <div class="power-strip-label">// ENGINEERING ARSENAL</div>
+    <div class="power-strip">
+      <div class="power-strip-marquee">
+        <div class="power-strip-content">
+          <span class="power-strip-item">React</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">Node.js</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">GenAI</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">RAG Systems</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">SQL</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">Docker</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">Python</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">Computer Vision</span>
+          <div class="power-strip-separator"></div>
+        </div>
+        <div class="power-strip-content" aria-hidden="true">
+          <span class="power-strip-item">React</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">Node.js</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">GenAI</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">RAG Systems</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">SQL</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">Docker</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">Python</span>
+          <div class="power-strip-separator"></div>
+          <span class="power-strip-item">Computer Vision</span>
+          <div class="power-strip-separator"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <div class="links">
-      <a href="https://github.com/acchasujal" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/your-username" target="_blank">LinkedIn</a>
+  <!-- About Section — Editorial Introduction -->
+  <section id="about" class="section container">
+    <div class="section-number">WHO I AM</div>
+    <h2 class="section-title reveal">
+      EDUCATION
+    </h2>
+    <div class="education-grid">
+      <!-- Card 1: College (VESIT) -->
+      <div class="education-card reveal">
+        <div class="education-icon">🏛️</div>
+        <h3 class="education-title">VESIT</h3>
+        <p class="education-subtitle">Vivekanand Education Society's Institute of Technology</p>
+        <div class="education-degree">B.Tech in Information Technology</div>
+        <div class="education-date">Sep 2024 - Jul 2028</div>
+        <div class="education-status">Pursuing</div>
+      </div>
+
+      <!-- Card 2: 12th Grade (Hero Card) -->
+      <div class="education-card education-card-hero reveal">
+        <div class="education-icon hero-icon">🏆</div>
+        <h3 class="education-title">St. Xavier's College</h3>
+        <p class="education-subtitle">HSC Science (PCMB)</p>
+        <div class="education-score">91.17%</div>
+        <div class="education-achievement">Ranked 1st in Science Stream</div>
+        <div class="education-date">Aug 2022 - Apr 2024</div>
+      </div>
+
+      <!-- Card 3: 10th Grade -->
+      <div class="education-card reveal">
+        <div class="education-icon">🏫</div>
+        <h3 class="education-title">Saraswati Vidyalaya</h3>
+        <p class="education-subtitle">SSC Schooling</p>
+        <div class="education-score">87.80%</div>
+        <div class="education-date">Aug 2012 - Mar 2022</div>
+      </div>
     </div>
 
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <!-- About Text — Editorial Paragraph -->
+    <div class="about-text reveal">
+      <p>A passionate <strong>UI/UX designer and full-stack engineer</strong> committed to creating impactful solutions
+        that bridge the gap between academic
+        theory and real-world applications. Currently leading technical initiatives at VESIT while building
+        open-source tools for social good.</p>
+    </div>
   </section>
 
-  <footer>
-    <p>© Sujal Gupta</p>
+  <!-- Experience Section — Journey Timeline -->
+  <section id="experience" class="section container">
+    <div class="section-number">MY JOURNEY</div>
+    <h2 class="section-title reveal">
+      EXPERIENCE
+    </h2>
+    <div class="timeline-wrapper">
+      <!-- Vertical Line -->
+      <div class="timeline-line"></div>
+
+      <!-- Gliding Orb -->
+      <div class="timeline-orb"></div>
+
+      <div class="timeline">
+        <!-- Role 1: ISTE VESIT -->
+        <div class="timeline-item" data-index="0">
+          <div class="timeline-content">
+            <div class="timeline-date">OCT 2025 — PRESENT</div>
+            <h3 class="timeline-role">SE Technical Officer</h3>
+            <div class="timeline-org">ISTE VESIT</div>
+            <p class="timeline-desc">Curating technical workshops and events to foster innovation and bridge the gap
+              between academic learning and industry applications. Leading initiatives that empower students with
+              cutting-edge technical skills.</p>
+          </div>
+        </div>
+
+        <!-- Role 2: QuestIT Cell -->
+        <div class="timeline-item" data-index="1">
+          <div class="timeline-content">
+            <div class="timeline-date">AUG 2025 — PRESENT</div>
+            <h3 class="timeline-role">Junior Technical Officer</h3>
+            <div class="timeline-org">QuestIT Cell</div>
+            <p class="timeline-desc">Providing tech support for department council and student initiatives. Organizing
+              coding competitions and technical workshops to build a vibrant community of learners and innovators.</p>
+          </div>
+        </div>
+
+        <!-- Role 3: Student -->
+        <div class="timeline-item" data-index="2">
+          <div class="timeline-content">
+            <div class="timeline-date">SEP 2024 — PRESENT</div>
+            <h3 class="timeline-role">Student</h3>
+            <div class="timeline-org">VESIT</div>
+            <p class="timeline-desc">Pursuing B.Tech in Information Technology while actively participating in
+              hackathons, building open-source projects, and contributing to the tech community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section — Showcase -->
+  <section id="work" class="section container">
+    <div class="section-number">CASE STUDIES</div>
+    <h2 class="section-title reveal">
+      SELECTED WORKS
+    </h2>
+    <div class="projects-grid">
+      <!-- Top Left: JalSarathi -->
+      <div class="project-card reveal">
+        <div class="project-card-content">
+          <div class="project-number">01</div>
+          <div class="project-label">SIH Team Leader</div>
+          <h3 class="project-title">JalSarathi</h3>
+          <p class="project-desc">Open-source water conservation tool featuring payback calculators and PDF generation
+            capabilities.</p>
+          <div class="project-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">PDF Gen</span>
+          </div>
+        </div>
+        <div class="project-cta">VIEW CASE STUDY ↗</div>
+      </div>
+
+      <!-- Top Right: Setu -->
+      <div class="project-card reveal">
+        <div class="project-card-content">
+          <div class="project-number">02</div>
+          <div class="project-label">GenAI Innovation</div>
+          <h3 class="project-title">Setu</h3>
+          <p class="project-desc">Voice-First AI Bridge designed to enhance accessibility for non-technical parents in
+            education.</p>
+          <div class="project-tech">
+            <span class="tech-tag">GenAI</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Voice AI</span>
+            <span class="tech-tag">NLP</span>
+          </div>
+        </div>
+        <div class="project-cta">VIEW CASE STUDY ↗</div>
+      </div>
+
+      <!-- Bottom Left: Aahaar-Parakh -->
+      <div class="project-card reveal">
+        <div class="project-card-content">
+          <div class="project-number">03</div>
+          <div class="project-label">Health Tech AI</div>
+          <h3 class="project-title">Aahaar-Parakh</h3>
+          <p class="project-desc">Food ingredient analysis application leveraging AI to provide comprehensive
+            nutritional insights.</p>
+          <div class="project-tech">
+            <span class="tech-tag">AI/ML</span>
+            <span class="tech-tag">CV</span>
+            <span class="tech-tag">Python</span>
+          </div>
+        </div>
+        <div class="project-cta">VIEW CASE STUDY ↗</div>
+      </div>
+
+      <!-- Bottom Right: Smart Meter -->
+      <div class="project-card reveal">
+        <div class="project-card-content">
+          <div class="project-number">04</div>
+          <div class="project-label">Computer Vision</div>
+          <h3 class="project-title">Smart Meter</h3>
+          <p class="project-desc">OCR solution for digitizing analog meters, streamlining data collection processes.</p>
+          <div class="project-tech">
+            <span class="tech-tag">CV</span>
+            <span class="tech-tag">OCR</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">OpenCV</span>
+          </div>
+        </div>
+        <div class="project-cta">VIEW CASE STUDY ↗</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section - Bento Grid (AZ Style) -->
+  <section class="skills-section container">
+    <div class="skills-label">// SKILLS ECOSYSTEM</div>
+
+    <div class="skills-bento-grid">
+      <!-- Language Core -->
+      <div class="bento-card reveal">
+        <h3 class="bento-title">Language Core</h3>
+        <div class="bento-items">
+          <span class="bento-item">Java</span>
+          <span class="bento-item">C++</span>
+          <span class="bento-item">Python</span>
+          <span class="bento-item">JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Frontend Engineering -->
+      <div class="bento-card reveal">
+        <h3 class="bento-title">Frontend Engineering</h3>
+        <div class="bento-items">
+          <span class="bento-item">React</span>
+          <span class="bento-item">Tailwind CSS</span>
+          <span class="bento-item">HTML5</span>
+        </div>
+      </div>
+
+      <!-- Backend & DB -->
+      <div class="bento-card reveal">
+        <h3 class="bento-title">Backend & DB</h3>
+        <div class="bento-items">
+          <span class="bento-item">Node.js</span>
+          <span class="bento-item">SQL</span>
+          <span class="bento-item">Express</span>
+        </div>
+      </div>
+
+      <!-- AI & Emerging Tech -->
+      <div class="bento-card bento-card-wide reveal">
+        <h3 class="bento-title">AI & Emerging Tech</h3>
+        <div class="bento-items">
+          <span class="bento-item">GenAI</span>
+          <span class="bento-item">RAG Systems</span>
+          <span class="bento-item">Computer Vision</span>
+        </div>
+      </div>
+
+      <!-- DevOps & Tools -->
+      <div class="bento-card reveal">
+        <h3 class="bento-title">DevOps & Tools</h3>
+        <div class="bento-items">
+          <span class="bento-item">Docker</span>
+          <span class="bento-item">Git</span>
+          <span class="bento-item">VS Code</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer - Split Screen (50/50) -->
+  <footer id="contact" class="footer">
+    <!-- Left Side: The Ask -->
+    <div class="footer-left">
+      <h2 class="footer-headline">READY TO<br>BUILD?</h2>
+      <p class="footer-subtext">Open for hackathons and engineering roles.</p>
+      <a href="mailto:sujalgupta1376@gmail.com" class="footer-email-btn">Email Me</a>
+    </div>
+
+    <!-- Right Side: Digital Presence -->
+    <div class="footer-right">
+      <div class="footer-profiles-label">DIGITAL PRESENCE</div>
+      <div class="footer-profiles-list">
+        <a href="https://github.com/acchasujal" target="_blank" rel="noopener noreferrer" class="footer-profile-link">
+          <span class="arrow">↗</span> GitHub (acchasujal)
+        </a>
+        <a href="https://leetcode.com/u/acchasujal/" target="_blank" rel="noopener noreferrer" class="footer-profile-link">
+          <span class="arrow">↗</span> LeetCode (acchasujal)
+        </a>
+        <a href="https://www.hackerrank.com/profile/sujalcantcode" target="_blank" rel="noopener noreferrer"
+          class="footer-profile-link">
+          <span class="arrow">↗</span> HackerRank
+        </a>
+        <a href="https://www.linkedin.com/in/sujal-gupta-78a452326/" target="_blank" rel="noopener noreferrer"
+          class="footer-profile-link">
+          <span class="arrow">↗</span> LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-credit">© 2026 Sujal Gupta. Mumbai.</div>
   </footer>
 
-</body>
-</html>
+  <script>
+    // High-Visibility Custom Cursor
+    const cursor = document.getElementById('custom-cursor');
+    let mouseX = 0, mouseY = 0;
+    let cursorX = 0, cursorY = 0;
 
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animateCursor() {
+      const dx = mouseX - cursorX;
+      const dy = mouseY - cursorY;
+
+      cursorX += dx * 0.15;
+      cursorY += dy * 0.15;
+
+      cursor.style.left = cursorX + 'px';
+      cursor.style.top = cursorY + 'px';
+
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    // Cursor hover effects
+    const hoverElements = document.querySelectorAll('a, button, .project-item, .timeline-item, .tech-tag, .navbar-link, .cta-btn');
+    hoverElements.forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+    });
+
+    // Magnetic effect for navbar links
+    const navLinks = document.querySelectorAll('.navbar-link');
+    navLinks.forEach(link => {
+      link.addEventListener('mousemove', (e) => {
+        const rect = link.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        link.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+      });
+
+      link.addEventListener('mouseleave', () => {
+        link.style.transform = 'translate(0, 0)';
+      });
+    });
+
+    // Magnetic effect for CTA buttons
+    const ctaButtons = document.querySelectorAll('.cta-btn');
+    ctaButtons.forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px) translateY(-4px)`;
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translate(0, 0)';
+      });
+    });
+
+    // Scroll Reveal
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      revealObserver.observe(el);
+    });
+
+
+    // Smooth parallax on scroll for hero titles
+    let ticking = false;
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrolled = window.pageYOffset;
+          const heroTitleFirst = document.querySelector('.hero-title-first');
+          const heroTitleLast = document.querySelector('.hero-title-last');
+
+          if (heroTitleFirst && heroTitleLast) {
+            heroTitleFirst.style.transform = `translateY(${scrolled * 0.3}px)`;
+            heroTitleLast.style.transform = `translateY(${scrolled * 0.5}px)`;
+          }
+
+          ticking = false;
+        });
+
+        ticking = true;
+      }
+    });
+
+    // Gliding Orb Timeline Effect (Redoyanul Style)
+    const timelineOrb = document.querySelector('.timeline-orb');
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const timelineWrapper = document.querySelector('.timeline-wrapper');
+
+    if (timelineOrb && timelineItems.length > 0) {
+      const orbObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const index = entry.target.getAttribute('data-index');
+            const rect = entry.target.getBoundingClientRect();
+            const wrapperRect = timelineWrapper.getBoundingClientRect();
+
+            // Calculate position relative to timeline wrapper
+            const relativeTop = rect.top - wrapperRect.top + (rect.height / 2);
+
+            // Move orb to center of active timeline item
+            timelineOrb.style.top = `${relativeTop}px`;
+
+            // Add active class to highlight current item
+            timelineItems.forEach(item => item.classList.remove('active'));
+            entry.target.classList.add('active');
+          }
+        });
+      }, {
+        threshold: 0.5,
+        rootMargin: '-20% 0px -20% 0px'
+      });
+
+      timelineItems.forEach(item => {
+        orbObserver.observe(item);
+      });
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
